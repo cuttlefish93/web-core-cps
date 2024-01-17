@@ -1,0 +1,23 @@
+.brand-card {
+	border-radius: 6px;
+	border: 1px solid $color-border-main;
+	background-color: $color-white;
+	width: 240px;
+	height: 72px;
+	padding: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include media($tablet) {
+		& {
+			width: 224px;
+		}
+	}
+
+	@include media($b-1200) {
+		& {
+			width: 240px;
+		}
+	}
+}

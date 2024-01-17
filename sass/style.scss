@@ -1,0 +1,46 @@
+/* Vendors */
+@import './vendors/normalize';
+
+/* Utils */
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/classes';
+
+/* Base */
+@import './base/reset';
+@import './base/typography';
+@import './base/base';
+
+/* Vendors */
+@import './vendors/swiper';
+
+/* Components */
+@import './components/btn-round';
+@import './components/divider';
+@import './components/link-round-text';
+@import './components/link-round';
+@import './components/link';
+@import './components/logo';
+@import './components/cell';
+@import './components/nav';
+@import './components/modal-bg';
+@import './components/load-btn';
+@import './components/section-title';
+@import './components/brands-slider';
+@import './components/brand-card';
+@import './components/repair-slider';
+@import './components/repair-card';
+@import './components/prices-slider';
+@import './components/service-card';
+@import './components/modal';
+@import './components/modal-form';
+
+/* Layout */
+@import './layout/header';
+@import './layout/content';
+@import './layout/services';
+@import './layout/brands';
+@import './layout/repair';
+@import './layout/prices';
+@import './layout/_footer';

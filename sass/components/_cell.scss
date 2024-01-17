@@ -1,0 +1,28 @@
+.cell {
+	&--link {
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
+	}
+
+	@include media($tablet) {
+		& {
+			&--link {
+				position: static;
+				width: 20%;
+			}
+
+			&--service {
+				width: 55%;
+			}
+
+			&--price {
+				width: 12%;
+			}
+
+			&--time {
+				width: 13%;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.service-card {
+	background-color: $color-white;
+	border-radius: 6px;
+	width: 260px;
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: relative;
+
+	&__cell {
+		letter-spacing: 0.2px;
+		font-size: 14px;
+	}
+
+	&__cell-header {
+		color: $color-text-secondary;
+		line-height: 16px;
+		font-weight: 500;
+		margin-bottom: 4px;
+		display: inline-block;
+	}
+
+	&__cell-text {
+		line-height: 18px;
+	}
+
+	@include media($tablet) {
+		& {
+			border-radius: 0;
+			flex-direction: row;
+			gap: 0;
+			padding: 16px 0;
+			align-items: center;
+			border-bottom: 1px solid $color-bg-main;
+			width: 100%;
+			padding: 23px 0;
+		}
+
+		&__cell-header {
+			display: none;
+		}
+
+		.link--order {
+			width: 100%;
+		}
+	}
+}

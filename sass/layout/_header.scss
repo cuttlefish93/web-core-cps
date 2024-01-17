@@ -1,0 +1,80 @@
+.header {
+	height: 80px;
+	padding: 0 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@extend %section-border-bottom;
+
+	.link-round--phone {
+		display: none;
+	}
+
+	.link-round--message {
+		display: none;
+	}
+
+	.link-round--profile {
+		display: none;
+	}
+
+	@include media($tablet) {
+		& {
+			padding: 0 24px;
+			justify-content: flex-start;
+
+			.link-round--phone {
+				display: block;
+			}
+
+			.link-round--message {
+				display: block;
+			}
+
+			.link-round--profile {
+				display: block;
+			}
+
+			.btn-round--burger {
+				margin-right: 20px;
+			}
+
+			.divider--first {
+				margin-right: 20px;
+			}
+
+			.link-round--phone {
+				margin-left: auto;
+				margin-right: 16px;
+			}
+
+			.link-round--message {
+				margin-right: 16px;
+			}
+
+			.link-round--profile {
+				margin-right: 20px;
+			}
+
+			.divider--third {
+				margin-right: 20px;
+			}
+
+			.link-round-text--repair {
+				margin-right: 16px;
+			}
+		}
+	}
+
+	.link-round-text {
+		.link-round-text__text {
+			display: none;
+		}
+	}
+
+	@include media($b-1200) {
+		& {
+			display: none;
+		}
+	}
+}

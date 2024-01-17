@@ -1,0 +1,23 @@
+/* COLORS */
+$color-text-main: #1b1c21;
+$color-text-secondary: #7e7e82;
+$color-text-inputs: #b5b6bc;
+$color-bg-main: #f8f8f8;
+$color-border-active-main: #41f6d7;
+$color-border-active-secondary: #b8ffec;
+$color-border-main: #eaeaea;
+$color-border-secondary: #d9fff5;
+$color-pink: #ff3e79;
+$color-white: #fff;
+$color-bullet: #dddddd;
+
+/* BOX SHADOWS */
+$shadow-menu: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+$shadow-modal: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+	-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+
+/* BREAKPOINTS */
+$desktop: 1440px;
+$b-1200: 1200px;
+$tablet: 768px;
+$b-600: 600px;

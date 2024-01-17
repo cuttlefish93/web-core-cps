@@ -1,0 +1,56 @@
+.modal {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	min-height: 100vh;
+	z-index: 10;
+	background-color: $color-white;
+	padding-top: 100px;
+
+	&.active {
+		z-index: 100;
+		box-shadow: $shadow-modal;
+		@include animation('modal 2s 1 both');
+	}
+
+	&__btn {
+		position: absolute;
+		top: 24px;
+		left: 16px;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 32px;
+		letter-spacing: -0.6px;
+		padding-left: 16px;
+
+		&.active {
+			border-left: 4px solid $color-border-active-main;
+			padding-left: 12px;
+		}
+	}
+
+	@include media($b-600) {
+		& {
+			padding-top: 40px;
+			width: 440px;
+		}
+
+		&__btn {
+			top: 32px;
+			left: -72px;
+		}
+
+		&__title {
+			padding-left: 30px;
+
+			&.active {
+				padding-left: 26px;
+			}
+		}
+	}
+}

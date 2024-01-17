@@ -1,0 +1,29 @@
+.brands-slider {
+	padding-left: 16px;
+
+	@include media($tablet) {
+		& {
+			padding: 0 24px;
+			height: 160px;
+			overflow-y: hidden;
+		}
+
+		&__wrapper {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 224px);
+			column-gap: 24px;
+			row-gap: 16px;
+		}
+	}
+
+	@include media($b-1200) {
+		& {
+			padding: 0 30px;
+		}
+
+		&__wrapper {
+			grid-template-columns: repeat(auto-fill, 240px);
+			column-gap: 32px;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.btn-round {
+	width: 40px;
+	height: 40px;
+	display: block;
+	transition: all .3s ease-in;
+
+	&:hover {
+		filter: brightness(0.8);
+	}
+
+	&--burger {
+		background-image: url('./../assets/images/icons/burger.svg');
+	}
+
+	&--close {
+		background-image: url('./../assets/images/icons/close-btn.svg');
+	}
+
+	&--search {
+		background-image: url('./../assets/images/icons/search-icon.svg');
+	}
+}

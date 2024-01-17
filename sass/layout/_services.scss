@@ -1,0 +1,163 @@
+.services {
+	padding: 24px 0;
+	@extend %section-border-bottom;
+
+	&__header {
+		display: flex;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		padding-left: 16px;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 40px;
+
+		&.active {
+			padding-left: 12px;
+			border-left: 4px solid $color-border-active-main;
+		}
+	}
+
+	&__links {
+		display: none;
+	}
+
+	&__list-wrapper {
+		background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.00) 100%);
+		overflow-x: hidden;
+		margin-bottom: 24px;
+	}
+
+	&__list {
+		display: flex;
+		gap: 4px;
+		padding: 0 16px;
+		overflow-x: auto;
+		font-weight: 500;
+		color: $color-text-secondary;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	&__list::-webkit-scrollbar {
+		display: none;
+	}
+
+	&__item {
+		flex-shrink: 0;
+	}
+
+	&__link {
+		display: block;
+		padding: 8px 8px 8px 16px;
+
+		&.active {
+			border-radius: 6px;
+			background-color: $color-white;
+			border: 2px solid $color-border-active-secondary;
+			cursor: auto;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__desc {
+		padding: 0 16px;
+		margin-bottom: 16px;
+	}
+
+	&__text-wrapper {
+		height: 100px;
+		overflow-y: hidden;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	&__load-btn {
+		margin-top: 16px;
+	}
+
+	&__bg {
+		max-width: 100%;
+	}
+}
+
+@include media($tablet) {
+	.services {
+
+		&__title {
+			padding-left: 24px;
+
+			&.active {
+				padding-left: 20px;
+			}
+		}
+
+		&__info {
+			flex-direction: row;
+			padding: 0 24px;
+			gap: 40px;
+		}
+
+		&__desc {
+			padding: 0;
+			width: 50%;
+		}
+
+		&__text-wrapper {
+			height: 160px;
+		}
+
+		&__bg {
+			width: 50%;
+			border-radius: 6px;
+		}
+	}
+}
+
+@include media($b-1200) {
+	.services {
+		padding: 40px 0;
+
+		&__header {
+			padding-right: 30px;
+			justify-content: space-between;
+		}
+
+		&__title {
+			padding-left: 30px;
+
+			&.active {
+				padding-left: 26px;
+			}
+		}
+
+		&__links {
+			display: flex;
+			gap: 30px;
+		}
+
+		&__list {
+			padding: 0 30px;
+			flex-wrap: wrap;
+		}
+
+		&__info {
+			padding: 0 30px;
+		}
+
+		&__text-wrapper {
+			gap: 20px;
+		}
+	}
+}

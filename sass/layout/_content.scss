@@ -1,0 +1,42 @@
+.content {
+	width: 100%;
+	display: flex;
+
+	&__aside {
+		width: 320px;
+		display: none;
+
+		.nav {
+			display: flex;
+			box-shadow: none;
+			position: static;
+
+			.btn-round--close {
+				display: none;
+			}
+		}
+	}
+
+	&__main {
+		width: 100%;
+		min-height: 100vh;
+		background-color: $color-bg-main;
+	}
+
+	@include media($b-1200) {
+		&__aside {
+			display: block;
+		}
+
+		&__main {
+			width: calc(100% - 320px);
+		}
+	}
+
+	@include media($desktop) {
+		& {
+			max-width: $desktop;
+			margin: 0 auto;
+		}
+	}
+}

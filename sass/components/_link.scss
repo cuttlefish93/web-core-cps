@@ -1,0 +1,64 @@
+.link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-in;
+
+	&:hover {
+		filter: brightness(0.8);
+		opacity: 0.5;
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	&--commercial {
+		display: inline-block;
+		padding: 0 16px;
+
+		.link__text {
+			font-weight: 500;
+			letter-spacing: -0.2px;
+		}
+
+		.link__icon {
+			background-image: url('../assets/images/icons/arrow-right-pink.svg');
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		@include media($tablet) {
+			& {
+				padding: 0 24px;
+			}
+		}
+
+		@include media($b-1200) {
+			& {
+				padding: 0 30px;
+			}
+		}
+	}
+
+	&--order {
+		border-radius: 16px;
+		background-color: $color-pink;
+		padding: 4px 8px 4px 12px;
+		gap: 8px;
+		width: fit-content;
+
+		.link__text {
+			color: $color-white;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: -0.15px;
+		}
+
+		.link__icon {
+			background-image: url('../assets/images/icons/arrow-right-white.svg');
+		}
+	}
+}

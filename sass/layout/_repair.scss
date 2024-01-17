@@ -1,0 +1,38 @@
+.repair {
+	@extend %section-border-bottom;
+	padding-bottom: 24px;
+
+	&__title {
+		margin-bottom: 16px;
+	}
+
+	&__load-btn {
+		margin-top: 24px;
+		padding-left: 24px;
+		display: none;
+	}
+
+	@include media($tablet) {
+		& {
+			padding-bottom: 30px;
+		}
+
+		&__title {
+			margin-bottom: 24px;
+		}
+
+		&__load-btn {
+			display: flex;
+		}
+	}
+
+	@include media($b-1200) {
+		& {
+			padding-bottom: 50px;
+		}
+
+		&__load-btn {
+			padding-left: 30px;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+@mixin media($breakpoint) {
+	@media (min-width: $breakpoint) {
+		@content;
+	}
+}
+
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($str) {
+	-webkit-animation: #{$str};
+	animation: #{$str};
+}
+
+@include keyframes(menu) {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 0;
+	}
+}
+
+@include keyframes(modal) {
+	from {
+		right: -100%;
+	}
+
+	to {
+		right: 0;
+	}
+}

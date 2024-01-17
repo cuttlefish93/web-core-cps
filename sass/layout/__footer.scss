@@ -1,0 +1,40 @@
+.footer {
+	padding: 16px 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	justify-content: center;
+	text-align: center;
+	color: $color-text-secondary;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+
+	&__copyright {
+		display: block;
+	}
+
+	@include media($tablet) {
+		& {
+			padding: 24px;
+			flex-direction: row;
+			justify-content: space-between;
+			text-align: left;
+			gap: 8px;
+		}
+
+		&__info {
+			width: 30%;
+
+			&:last-child {
+				text-align: right;
+			}
+		}
+	}
+
+	@include media($b-1200) {
+		& {
+			padding: 30px;
+		}
+	}
+}

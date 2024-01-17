@@ -1,0 +1,30 @@
+.link-round {
+	width: 40px;
+	height: 40px;
+	display: block;
+	transition: all .3s ease-in;
+
+	&:hover {
+		filter: brightness(0.8);
+	}
+
+	&--phone {
+		background-image: url('./../assets/images/icons/phone.svg');
+	}
+
+	&--message {
+		background-image: url('./../assets/images/icons/chat.svg');
+	}
+
+	&--profile {
+		background-image: url('./../assets/images/icons/profile.svg');
+	}
+
+	&--arrow-go {
+		background-image: url('./../assets/images/icons/arrow-btn.svg');
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
